@@ -1,0 +1,105 @@
+.form-wrapper {
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 5px 20px rgb(9, 87, 103, .3);
+  border-radius: 1.5rem;
+  margin: 0 auto;
+  padding: 5%;
+  background-color: var(--white);
+}
+.form-heading-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+
+  }
+  .form-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+  
+  }
+
+.form-score {
+    font-family: "Merriweather", serif;
+
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #07a6ce;
+  margin-bottom: 3rem;
+
+}
+.form-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+.field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  color: rgb(221, 50, 50);
+  display: block;
+}
+textarea {
+  width: 100%;
+  padding: 5%;
+  border: 2px solid rgb(9, 87, 103);
+  border-radius: 1rem;
+}
+textarea:focus{
+    outline: none;
+    border: 2px solid #fb5a0492;
+   cursor: pointer;
+}
+.my-button {
+  width: 100%;
+  height: 4.2rem;
+  background: linear-gradient(to right, rgb(9, 87, 103,.1), #0c2d3573);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #64402c;
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.my-button.active{
+ background: linear-gradient(to right, rgb(9, 87, 103), #07a6ce);
+ color: #fb5b04; 
+}
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 30px;
+    border-radius: 1.5rem;
+    background: linear-gradient(to right, rgb(9, 87, 103), #07a6ce);
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s, background 0.3s ease;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #000000;
+    border: 2px solid #fb5b04;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
